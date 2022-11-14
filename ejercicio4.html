@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla de multiplicar </title>
+</head>
+<body>
+
+    <p> 
+        <h3>EJERCICO 4</H3>
+        Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número ingresado por el usuario
+
+    </p>
+
+    <label for="num">Introduce un número: </label>
+    <input type="number" name="" id="num">
+
+    <button onclick="multi()">MULTIPLICACIÓN</button>
+
+     <div id="tabla-multi"></div>
+
+    </textarea>
+
+    
+
+    <script>
+        let inputNum = document.getElementById("num")
+        let tablaMulti = document.getElementById("tabla-multi")
+
+        function multi() {
+
+        let numero = parseInt(inputNum.value);
+  
+        let tabla = ''
+
+        for (let i = 1; i <= 10; i++) {
+        tabla += numero + "x" + i + "=" + numero * i + "<br>"
+      }
+
+         tablaMulti.innerHTML = tabla
+}
+    </script>
+</body>
+</html>

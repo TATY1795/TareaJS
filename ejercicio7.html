@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar numeros</title>
+</head>
+<body>
+      <h3>EJERCICO 7</h3>
+      <P>7.	Elaborar un algoritmo para leer la nota de diez estudiantes y mostrar cantidad de aprobados y reprobados.
+        </P>
+       
+
+
+        <script>
+              function notas(){
+            var nota;
+            var aprobados = 0;
+            var reprobados = 0; 
+
+            for(let i=1; i<=10; i++){
+
+                nota=prompt('Ingrese su nota');
+
+                if(nota>=7){
+
+                    aprobados =aprobados+ 1;
+                                       
+                } else {
+                    reprobados = reprobados + 1 ;
+                }
+            } alert('Hay '+aprobados+ "  aprobados y hay " + reprobados+  ' reprobados.');
+        }
+     notas();
+        </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+</head>
+<body>
+   
+    <h3>JERCICIO 8</h3>
+    <P>
+        Elabore un algoritmo con un menú simple con las cuatro operaciones básicas:
+         sumar, restar, multiplicar, dividir.
+    </P>
+
+<form name="calculadora"> 
+        Primer número: <input type="text" name="valor1"><br><br>
+        Segundo número: <input type="text" name="valor2"><br> <br>
+        <input class="btn btn-info"  type="button" name="button1" value="sumar" onclick="sumar()">
+        <input  class="btn btn-danger" type="button" name="button2" value="restar" onclick="restar()">
+        <input class="btn btn-primary"  type="button" name="button3" value="multiplicar" onclick="multiplicar()"> 
+        <input  class="btn btn-success" type="button" name="button4" value="dividir" onclick="dividir()">
+        <br><br>
+        Resultado: 
+       <input type="number" name="resultado"> </form>
+
+       <script>
+        function sumar() { 
+
+            let num1, num2, sum;
+            num1 = parseInt(document.calculadora.valor1.value); 
+            num2 = parseInt(document.calculadora.valor2.value);
+            sum = num1 + num2; document.calculadora.resultado.value = sum;
+
+             }
+        function restar() {
+
+            let num1, num2, res;
+            num1 = parseInt(document.calculadora.valor1.value)
+            num2 = parseInt(document.calculadora.valor2.value);
+            res = num1 - num2; document.calculadora.resultado.value = res; 
+
+              }
+        function multiplicar() {
+            let num1, num2, multi;
+            num1 = parseInt(document.calculadora.valor1.value); 
+            num2 = parseInt(document.calculadora.valor2.value);
+            multi = num1 * num2; document.calculadora.resultado.value = multi;
+
+            } 
+        function dividir() { // codigo similar a los anteriores } </scr
+        let num1, num2, divi;
+            num1 = parseInt(document.calculadora.valor1.value); 
+            num2 = parseInt(document.calculadora.valor2.value);
+            divi = num1 / num2; document.calculadora.resultado.value = divi;
+                    }  
+    </script>
+</body>
+</html>

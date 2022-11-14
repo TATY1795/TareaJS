@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" href="./bootstrap/js/bootstrap.min.js">
+    <title>ejercicio 6</title>
+</head>
+<body>
+
+    <h3 class="text-center">EJERCICIO 6</h3>
+    <P class="text-center">
+        6.	Elaborar un algoritmo para leer las notas de 1 estudiantes.
+        Calcular el promedio de cada estudiante de la siguiente manera: <br><br>
+        Nota 1 (20%) <br>
+        Nota 2 (30%) <br>
+        Nota 3 (50%) <br>
+
+    </P>
+        <div class="d-flex flex-row mb-10 col-6.5 position-absolute abs-center ">
+            <form name="promedio" class="form-control">
+                NOTA 1 :<input type="number" name="valor1"><br><br>
+                NOTA 2 :<input type="number" name="valor2"><br><br>
+                NOTA 3 :<input type="number" name="valor3"><br><br>
+    
+                <input type="button" name="calcular" value="Calcular Promedio" onclick="nota_final()" class="btn btn-success">
+                <br><br>
+                Resultado: 
+               <input type="number" name="resultado"> 
+            </form>
+        </div>
+        
+        
+
+
+    <script>
+
+function nota_final() {
+
+    let nota1 , nota2, nota3 , total;
+
+            nota1 = parseInt(document.promedio.valor1.value);
+            nota2 = parseInt(document.promedio.valor2.value);
+            nota3 = parseInt(document.promedio.valor3.value);
+
+            nota1 = (nota1 * 0.20)
+            nota2 = (nota2 * 0.30)
+            nota3 = (nota3 * 0.50)
+            total = nota1 + nota2 + nota3;document.promedio.resultado.value = total ;
+
+                        
+}
+
+    </script>
+    
+</body>
+</html>

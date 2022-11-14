@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Ejercicio</h1>
+    <p><strong>Indicacion</strong><br>Elaborar un algoritmo para leer la edad de 10 personas y mostrar cuantos son mayores de edad.</p>
+    
+    <script>
+        function edades(){
+            var edad;
+            var mayores_total = 0;
+
+            for(let i=1; i<=10; i++){
+                edad=prompt('Ingrese una edad');
+
+                if(edad>=18){
+                    mayores_total= mayores_total + 1;
+                } 
+            } alert('la cantida de personas mayores de EDAD es de '+mayores_total);
+        }
+
+        edades();
+    </script>
+</body>
+</html>
